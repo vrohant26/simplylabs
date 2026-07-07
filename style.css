@@ -1,15 +1,466 @@
 /*
 Theme Name: Simply Labs
-Theme URI: https://simply-labs.com
+Theme URI: https://www.simplylabs.health/
 Author: Brandinstitute
 Description: A minimal, custom WordPress theme built from scratch.
-Version: 1.0.1
+Version: 1.0.3
 Text Domain: simply-labs
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
-* {
+/* Brand Identity & Colors (DRY CSS Variables) */
+:root {
+    --color-primary-red: #E81D2D;
+    --color-primary-blue: #0075BD;
+    --color-primary-red-hover: #c21422;
+    --color-primary-blue-hover: #005f9b;
+}
+
+/* Global Reset & Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #faf9f6;
+    /* Warm off-white background matching the mockup */
+    color: #1c1917;
+    /* Warm black */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+/* Reusable Global Container */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 48px);
+    width: 100%;
+}
+
+/* Header Styling */
+.site-header {
+    width: 100%;
+    background-color: transparent;
+    padding: clamp(16px, 2vw, 28px) 0;
+    position: relative;
+    z-index: 10;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo-img {
+    height: clamp(28px, 3.5vw, 36px);
+    /* Fluidly scales logo height */
+    width: auto;
+    display: block;
+}
+
+.site-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: clamp(16px, 2.5vw, 32px);
+}
+
+.nav-menu a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #57534e;
+    /* Warm gray */
+}
+
+.nav-menu a:hover {
+    color: var(--color-primary-blue);
+}
+
+.header-cta .btn-contact {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-primary-red);
+    color: #ffffff;
+    /* Contrast white text */
+    padding: clamp(10px, 1.2vw, 12px) clamp(20px, 2vw, 24px);
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header-cta .btn-contact .arrow {
+    margin-left: 8px;
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.header-cta .btn-contact:hover {
+    background-color: var(--color-primary-red-hover);
+}
+
+.header-cta .btn-contact:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* Main Content & Hero Section */
+.hero-page-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+    padding: clamp(40px, 5vw, 60px) 0 clamp(40px, 6vw, 80px) 0;
+}
+
+.hero-section .container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: clamp(32px, 6vw, 80px);
+    align-items: center;
+}
+
+/* Hero Left: Fluid Typography & Spacing */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-tagline {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--color-primary-red);
+    margin-bottom: clamp(16px, 2vw, 24px);
+    text-transform: uppercase;
+}
+
+.hero-title {
+    font-family: 'Lora', Georgia, serif;
+    font-size: clamp(2.4rem, 5.5vw, 4.8rem);
+    /* Completely fluid font sizing */
+    font-weight: 500;
+    line-height: 1.1;
+    color: #0c0a09;
+    letter-spacing: -0.02em;
+    margin-bottom: clamp(20px, 3vw, 32px);
+}
+
+.hero-description {
+    font-size: clamp(15px, 1.2vw, 17px);
+    line-height: 1.6;
+    color: #57534e;
+    max-width: 480px;
+    margin-bottom: clamp(24px, 4vw, 40px);
+}
+
+.hero-cta-group {
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 3vw, 32px);
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-primary-blue);
+    color: #ffffff;
+    padding: clamp(14px, 1.5vw, 18px) clamp(24px, 2.5vw, 32px);
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary .arrow {
+    margin-left: 8px;
+    font-size: 15px;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-blue-hover);
+}
+
+.btn-primary:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* Trusted Badge & Avatars */
+.trusted-badge {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar-group {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-group .avatar {
+    width: clamp(36px, 3.5vw, 40px);
+    height: clamp(36px, 3.5vw, 40px);
+    border-radius: 50%;
+    border: 3px solid #faf9f6;
+    object-fit: cover;
+    margin-left: -12px;
+}
+
+.avatar-group .avatar:first-child {
+    margin-left: 0;
+}
+
+.trusted-text {
+    font-family: 'Plus Jakarta Sans', monospace, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #57534e;
+    text-transform: uppercase;
+}
+
+/* Hero Right: Image & Floating Card */
+.hero-visual {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.image-crop-container {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    border-radius: clamp(16px, 2.5vw, 28px);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 84%);
+    overflow: hidden;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: clamp(350px, 45vw, 580px);
+    /* Fluid height of hero image */
+    object-fit: cover;
+}
+
+/* Floating Testimonial Card */
+.testimonial-card {
+    position: absolute;
+    width: clamp(280px, 30vw, 320px);
+    /* Fluid width of quote card */
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: clamp(18px, 2vw, 24px);
+    box-shadow: 0 20px 40px rgba(28, 25, 23, 0.08), 0 1px 3px rgba(28, 25, 23, 0.04);
+    z-index: 5;
+}
+
+/* Position card on hero visual container so it is not cropped */
+.hero-visual .testimonial-card {
+    bottom: clamp(20px, 3vw, 40px);
+    right: clamp(-20px, -2vw, -10px);
+}
+
+.testimonial-rating {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.testimonial-rating .star {
+    color: var(--color-primary-blue);
+    font-size: 16px;
+}
+
+.testimonial-quote {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(13px, 1.1vw, 14px);
+    font-weight: 500;
+    line-height: 1.5;
+    color: #1c1917;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0c0a09;
+}
+
+.author-role {
+    font-size: 11px;
+    color: #78716c;
+    margin-top: 2px;
+}
+
+/* Client Logos Showcase - Infinite Marquee Left-to-Right */
+.logos-section {
+    padding: clamp(30px, 4vw, 40px) 0 clamp(40px, 5vw, 60px) 0;
+    border-top: 1px solid rgba(220, 218, 212, 0.5);
+    margin-top: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    /* Soft premium side-gradients */
+    mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    /* Scrolls from left to right infinitely */
+    animation: marquee-scroll 35s linear infinite;
+}
+
+.marquee-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: clamp(40px, 6vw, 80px);
+    padding-right: clamp(40px, 6vw, 80px);
+}
+
+.client-logo {
+    display: flex;
+    align-items: center;
+    color: #78716c;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.client-logo:hover {
+    opacity: 1;
+    color: var(--color-primary-blue);
+}
+
+.logo-svg {
+    display: block;
+    max-height: clamp(24px, 2.5vw, 30px);
+    width: auto;
+}
+
+.dept-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.dept-brand {
+    font-size: clamp(12px, 1.2vw, 14px);
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: currentColor;
+    line-height: 1;
+}
+
+.dept-subtitle {
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: currentColor;
+    line-height: 1.2;
+    margin-top: 2px;
+}
+
+@keyframes marquee-scroll {
+    0% {
+
+        transform: translateX(0%);
+    }
+
+    100% {
+
+        transform: translateX(-50%);
+    }
+}
+
+/* Structural Breakpoint Refinements */
+@media (max-width: 1024px) {
+    .hero-section .container {
+        grid-template-columns: 1fr;
+        gap: clamp(40px, 6vw, 60px);
+    }
+
+    .hero-content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-cta-group {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-navigation {
+        display: none;
+        /* Hide default nav menu on mobile/tablets for simplicity */
+    }
+
+    .hero-visual .testimonial-card {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        margin-top: 20px;
+        box-shadow: 0 10px 30px rgba(28, 25, 23, 0.06);
+    }
+
+    .hero-visual {
+        flex-direction: column;
+        align-items: center;
+    }
 }

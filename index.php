@@ -8,7 +8,9 @@
 get_header();
 ?>
 
-<h1>Hello World</h1>
+<main>
+
+</main>
 
 <?php
 get_footer();

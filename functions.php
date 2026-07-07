@@ -21,3 +21,13 @@ if ( ! function_exists( 'simply_labs_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'simply_labs_setup' );
+
+/**
+ * Enqueue scripts and styles.
+ */
+function simply_labs_scripts() {
+	$theme_version = wp_get_theme()->get( 'Version' );
+	wp_enqueue_style( 'simply-labs-style', get_stylesheet_uri(), array(), $theme_version );
+}
+add_action( 'wp_enqueue_scripts', 'simply_labs_scripts' );
+
