@@ -14,17 +14,15 @@ get_header();
 		<div class="container">
 			<!-- Hero Left: Typography & CTAs -->
 			<div class="hero-content">
-				<span class="hero-tagline">CONSULTANCY AGENCY</span>
+				<span class="hero-tagline">MODERN DIAGNOSTIC LABORATORY</span>
 				<h1 class="hero-title">
-					Measurable<br>
-					Performance for<br>
-					businesses
+					Laboratory Testing That Delivers Answers Faster
 				</h1>
 				<p class="hero-description">
-					Simply Labs is a consultancy built for teams that need direction, structure, and execution—not vague advice or long decks.
+					Skip the long wait times. Simply Labs provides fast, accurate laboratory testing with transparent pricing and expert clinical oversight—helping you make informed health decisions with confidence.
 				</p>
 				<div class="hero-cta-group">
-					<a href="#" class="btn-primary">START A FREE MEETING <span class="arrow">&rarr;</span></a>
+					<a href="#" class="btn-primary">BOOK A TEST <span class="arrow">&rarr;</span></a>
 					<div class="trusted-badge">
 						<div class="avatar-group">
 							<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Client 1" class="avatar">
@@ -55,8 +53,8 @@ get_header();
 						“Their structured approach cut our operational waste in half.”
 					</p>
 					<div class="testimonial-author">
-						<span class="author-name">Sayyan</span>
-						<span class="author-role">Head of Product</span>
+						<span class="author-name">— Sarah M.</span>
+						<span class="author-role">Patient</span>
 					</div>
 				</div>
 			</div>
@@ -156,7 +154,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- Group 3 (Duplicate for seamless loop) -->
 				<div class="marquee-group">
 					<!-- Logo 1: Bear logoipsum -->

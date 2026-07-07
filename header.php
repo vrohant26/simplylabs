@@ -17,11 +17,9 @@
 		</div>
 		<nav class="site-navigation">
 			<ul class="nav-menu">
+				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
 				<li><a href="#">About</a></li>
-				<li><a href="#">Pages</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Case Studies</a></li>
-				<li><a href="#">Pricing</a></li>
+				<li><a href="#">What We Do</a></li>
 				<li><a href="#">Blog</a></li>
 			</ul>
 		</nav>

@@ -3,7 +3,7 @@ Theme Name: Simply Labs
 Theme URI: https://www.simplylabs.health/
 Author: Brandinstitute
 Description: A minimal, custom WordPress theme built from scratch.
-Version: 1.0.3
+Version: 1.0.4
 Text Domain: simply-labs
 */
 
@@ -74,7 +74,7 @@ a {
 }
 
 .site-logo-img {
-    height: clamp(28px, 3.5vw, 36px);
+    height: clamp(28px, 4vw, 50px);
     /* Fluidly scales logo height */
     width: auto;
     display: block;
@@ -261,7 +261,8 @@ a {
     position: relative;
     width: 100%;
     max-width: 480px;
-    border-radius: clamp(16px, 2.5vw, 28px);
+    aspect-ratio: 3 / 4;
+    /* Keeps exact 3:4 aspect ratio (600x800) */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 84%);
     overflow: hidden;
 }
@@ -269,8 +270,7 @@ a {
 .hero-image {
     display: block;
     width: 100%;
-    height: clamp(350px, 45vw, 580px);
-    /* Fluid height of hero image */
+    height: 100%;
     object-fit: cover;
 }
 
