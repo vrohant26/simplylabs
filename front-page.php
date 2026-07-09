@@ -494,8 +494,8 @@ get_header();
 			<div class="stats-header fade-up">
 				<div class="stats-header-left">
 					<span class="stats-tagline text-sm">WHY PATIENTS CHOOSE US</span>
-					<h2 class="stats-title font-lora text-display-lg">
-						Everything You Need for a Better Diagnostic Experience
+					<h2 class="about-title  text-display-sm">
+						Every test is backed by advanced laboratory technology, expert clinical oversight, and a commitment to delivering accurate results with speed, transparency, and care.
 					</h2>
 				</div>
 				<div class="stats-cta">
@@ -532,6 +532,261 @@ get_header();
 					</div>
 					<hr class="stat-divider">
 					<p class="stat-description text-base">Every report is backed by experienced laboratory professionals.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Laboratory & Technology Section -->
+	<section class="tech-section">
+		<div class="container">
+			<div class="tech-container">
+				<!-- Left Column: Typography & CTA -->
+				<div class="tech-content">
+					<span class="tech-tagline text-sm fade-up">LABORATORY & TECHNOLOGY</span>
+					<h2 class="tech-title font-lora text-display-lg fade-up fade-up-delay-1">
+						Advanced Technology for Accurate Diagnostics
+					</h2>
+					<p class="tech-description text-base fade-up fade-up-delay-2">
+						Our laboratory combines advanced diagnostic technology with rigorous quality standards and expert clinical oversight to deliver fast, accurate, and dependable results for every patient.
+					</p>
+					<div class="tech-cta fade-up fade-up-delay-3">
+						<a href="#" class="btn-primary text-sm">EXPLORE OUR LAB <span class="arrow">&rarr;</span></a>
+					</div>
+				</div>
+				
+				<!-- Right Column: Mesh Gradient & Image & Floating Stat Card -->
+				<div class="tech-visual-wrapper fade-up fade-up-delay-2">
+					<div class="tech-glow-bg">
+						<div class="tech-image-crop">
+							<img src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?w=800&h=600&fit=crop" alt="Clinical Laboratory Technology" class="tech-image">
+						</div>
+						
+						<!-- Floating Stats Card (matches mockup business sparkline card in clinical context) -->
+						<div class="tech-floating-card">
+							<span class="tech-card-label text-xs">Diagnostic Accuracy</span>
+							<div class="tech-card-value-row">
+								<span class="tech-card-value font-lora text-xl">99.9%</span>
+								<span class="tech-card-trend text-xs">+0.1% increase</span>
+							</div>
+							<!-- Custom sparkline chart showing diagnostic consistency -->
+							<svg class="tech-mini-chart" viewBox="0 0 100 24" width="100%" height="24">
+								<path d="M0,18 Q12,8 24,14 T48,6 T72,12 T96,2" fill="none" stroke="#0075BD" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Accordion Section -->
+	<section class="faq-section">
+		<div class="container">
+			<div class="faq-header text-center fade-up">
+				<span class="faq-tagline text-sm">FAQ</span>
+				<h2 class="faq-title font-lora text-display-lg">Frequently Asked Questions</h2>
+			</div>
+			
+			<div class="faq-wrapper fade-up fade-up-delay-1">
+				<!-- Question 1 -->
+				<div class="faq-item">
+					<button class="faq-trigger" aria-expanded="false">
+						<span class="faq-icon-wrapper">
+							<svg class="faq-plus-icon" viewBox="0 0 24 24" width="24" height="24">
+								<line class="vert-line" x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+								<line class="horiz-line" x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+						</span>
+						<span class="faq-question text-lg font-bold">How long does it take to receive my test results?</span>
+					</button>
+					<div class="faq-content">
+						<div class="faq-answer text-base">
+							<p>Most routine laboratory tests are processed within 24 hours, though turnaround times may vary depending on the type of test.</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Question 2 -->
+				<div class="faq-item">
+					<button class="faq-trigger" aria-expanded="false">
+						<span class="faq-icon-wrapper">
+							<svg class="faq-plus-icon" viewBox="0 0 24 24" width="24" height="24">
+								<line class="vert-line" x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+								<line class="horiz-line" x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+						</span>
+						<span class="faq-question text-lg font-bold">Do I need an appointment for testing?</span>
+					</button>
+					<div class="faq-content">
+						<div class="faq-answer text-base">
+							<p>Appointments are recommended to ensure a smooth experience, but availability may vary depending on the test and location.</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Question 3 -->
+				<div class="faq-item">
+					<button class="faq-trigger" aria-expanded="false">
+						<span class="faq-icon-wrapper">
+							<svg class="faq-plus-icon" viewBox="0 0 24 24" width="24" height="24">
+								<line class="vert-line" x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+								<line class="horiz-line" x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+						</span>
+						<span class="faq-question text-lg font-bold">Do I need to fast before my test?</span>
+					</button>
+					<div class="faq-content">
+						<div class="faq-answer text-base">
+							<p>Some blood tests require fasting, while others do not. Any preparation instructions will be provided before your appointment.</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Question 4 -->
+				<div class="faq-item">
+					<button class="faq-trigger" aria-expanded="false">
+						<span class="faq-icon-wrapper">
+							<svg class="faq-plus-icon" viewBox="0 0 24 24" width="24" height="24">
+								<line class="vert-line" x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+								<line class="horiz-line" x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+						</span>
+						<span class="faq-question text-lg font-bold">Are my results reviewed by healthcare professionals?</span>
+					</button>
+					<div class="faq-content">
+						<div class="faq-answer text-base">
+							<p>Yes. Every report is processed using advanced laboratory technology and reviewed under expert clinical oversight to ensure accuracy and reliability.</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Question 5 -->
+				<div class="faq-item">
+					<button class="faq-trigger" aria-expanded="false">
+						<span class="faq-icon-wrapper">
+							<svg class="faq-plus-icon" viewBox="0 0 24 24" width="24" height="24">
+								<line class="vert-line" x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+								<line class="horiz-line" x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+						</span>
+						<span class="faq-question text-lg font-bold">How will I receive my laboratory results?</span>
+					</button>
+					<div class="faq-content">
+						<div class="faq-answer text-base">
+							<p>Your results are delivered securely through a digital report, making them easy to access and share with your healthcare provider if needed.</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Question 6 -->
+				<div class="faq-item">
+					<button class="faq-trigger" aria-expanded="false">
+						<span class="faq-icon-wrapper">
+							<svg class="faq-plus-icon" viewBox="0 0 24 24" width="24" height="24">
+								<line class="vert-line" x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+								<line class="horiz-line" x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+						</span>
+						<span class="faq-question text-lg font-bold">What types of tests do you offer?</span>
+					</button>
+					<div class="faq-content">
+						<div class="faq-answer text-base">
+							<p>We offer a wide range of diagnostic and preventive health tests, including routine blood work, wellness screenings, hormone panels, and specialized laboratory testing.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Latest Insights Blog Section -->
+	<section class="blogs-section">
+		<div class="container">
+			<div class="blogs-header fade-up">
+				<div class="blogs-header-left">
+					<span class="blogs-tagline text-sm">OUR BLOGS</span>
+					<h2 class="blogs-title font-lora text-display-lg">Latest Insights</h2>
+				</div>
+				<div class="blogs-header-right">
+					<a href="#" class="blogs-all-btn text-base font-bold">
+						All Blog
+						<span class="blogs-arrow-circle">
+							<svg class="blogs-arrow-icon" viewBox="0 0 24 24" width="16" height="16">
+								<line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+								<polyline points="12 5 19 12 12 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</span>
+					</a>
+				</div>
+			</div>
+			
+			<div class="blogs-grid">
+				<!-- Post 1 -->
+				<article class="blog-card fade-up fade-up-delay-1">
+					<div class="blog-card-image-wrapper">
+						<img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?w=600&h=400&fit=crop" alt="Routine blood work vials" class="blog-card-image">
+					</div>
+					<div class="blog-card-meta">
+						<span class="blog-card-category text-xs">/WELLNESS</span>
+						<span class="blog-card-date text-xs">JULY 8, 2026</span>
+					</div>
+					<h3 class="blog-card-title text-xl">
+						<a href="#">Understanding Your Complete Blood Count (CBC): What the Numbers Mean</a>
+					</h3>
+					<p class="blog-card-excerpt text-base">
+						A breakdown of red cells, white cells, and platelets, helping you understand how routine blood work monitors immune health and energy levels.
+					</p>
+				</article>
+				
+				<!-- Post 2 -->
+				<article class="blog-card fade-up fade-up-delay-2">
+					<div class="blog-card-image-wrapper">
+						<img src="https://images.pexels.com/photos/7088483/pexels-photo-7088483.jpeg?w=600&h=400&fit=crop" alt="Molecular diagnostics lab test" class="blog-card-image">
+					</div>
+					<div class="blog-card-meta">
+						<span class="blog-card-category text-xs">/DIAGNOSTICS</span>
+						<span class="blog-card-date text-xs">JULY 5, 2026</span>
+					</div>
+					<h3 class="blog-card-title text-xl">
+						<a href="#">The Role of Advanced Biomarkers in Early Disease Detection</a>
+					</h3>
+					<p class="blog-card-excerpt text-base">
+						Explore how next-generation molecular diagnostics identify key biomarkers before symptoms appear, offering valuable windows for preventive treatment.
+					</p>
+				</article>
+				
+				<!-- Post 3 -->
+				<article class="blog-card fade-up fade-up-delay-3">
+					<div class="blog-card-image-wrapper">
+						<img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?w=600&h=400&fit=crop" alt="Healthy foods and nutrition plates" class="blog-card-image">
+					</div>
+					<div class="blog-card-meta">
+						<span class="blog-card-category text-xs">/PREVENTION</span>
+						<span class="blog-card-date text-xs">JULY 2, 2026</span>
+					</div>
+					<h3 class="blog-card-title text-xl">
+						<a href="#">Key Vitamin and Hormone Markers to Optimize Daily Performance</a>
+					</h3>
+					<p class="blog-card-excerpt text-base">
+						How tracking vitamin D, thyroid markers, and hormone levels can reveal hidden deficiencies and guide personalized wellness plans.
+					</p>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Parallax Section -->
+	<section class="cta-parallax-section">
+		<div class="cta-parallax-overlay"></div>
+		<div class="container">
+			<div class="cta-parallax-content text-center fade-up">
+				<span class="cta-tagline text-sm">SIMPLY LABS IS THE LEADING CLINICAL LABORATORY</span>
+				<h2 class="cta-title font-lora text-display-lg">
+					Ready to take control <br> of your health?
+				</h2>
+				<div class="cta-btn-wrapper">
+					<a href="#" class="cta-btn text-base font-bold">BOOK A TEST <span class="arrow">&rarr;</span></a>
 				</div>
 			</div>
 		</div>

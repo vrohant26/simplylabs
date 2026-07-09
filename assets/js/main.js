@@ -144,4 +144,35 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
+
+  // FAQ Accordion Toggle Interaction
+  const faqItems = document.querySelectorAll(".faq-item");
+  faqItems.forEach((item) => {
+    const trigger = item.querySelector(".faq-trigger");
+    const content = item.querySelector(".faq-content");
+
+    trigger.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
+
+      // Close all other FAQ items for a single accordion focus behavior
+      faqItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.classList.remove("active");
+          otherItem.querySelector(".faq-trigger").setAttribute("aria-expanded", "false");
+          otherItem.querySelector(".faq-content").style.maxHeight = null;
+        }
+      });
+
+      // Toggle current item
+      if (!isActive) {
+        item.classList.add("active");
+        trigger.setAttribute("aria-expanded", "true");
+        content.style.maxHeight = `${content.scrollHeight}px`;
+      } else {
+        item.classList.remove("active");
+        trigger.setAttribute("aria-expanded", "false");
+        content.style.maxHeight = null;
+      }
+    });
+  });
 });
