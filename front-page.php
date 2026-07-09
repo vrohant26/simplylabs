@@ -14,34 +14,63 @@ get_header();
 		<div class="container">
 			<!-- Hero Left: Typography & CTAs -->
 			<div class="hero-content">
-				<span class="hero-tagline">MODERN DIAGNOSTIC LABORATORY</span>
-				<h1 class="hero-title">
+				<span class="hero-tagline text-sm fade-up">MODERN DIAGNOSTIC LABORATORY</span>
+				<h1 class="hero-title text-display-lg fade-up fade-up-delay-1">
 					Laboratory Testing That Delivers Answers Faster
 				</h1>
-				<p class="hero-description">
-					Skip the long wait times. Simply Labs provides fast, accurate laboratory testing with transparent pricing and expert clinical oversight—helping you make informed health decisions with confidence.
+				<p class="hero-description text-md fade-up fade-up-delay-2">
+					Skip the long wait times. Simply Labs provides fast, accurate laboratory testing with transparent pricing and expert clinical oversight—helping you  make informed health decisions with confidence.
 				</p>
-				<div class="hero-cta-group">
-					<a href="#" class="btn-primary">BOOK A TEST <span class="arrow">&rarr;</span></a>
+				<div class="hero-cta-group fade-up fade-up-delay-3">
+					<a href="#" class="btn-primary text-sm">BOOK A TEST <span class="arrow">&rarr;</span></a>
 					<div class="trusted-badge">
 						<div class="avatar-group">
 							<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Client 1" class="avatar">
 							<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Client 2" class="avatar">
 							<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces" alt="Client 3" class="avatar">
 						</div>
-						<span class="trusted-text">TRUSTED BY WORLDWIDE</span>
+						<span class="trusted-text text-xs">TRUSTED BY WORLDWIDE</span>
 					</div>
 				</div>
 			</div>
 
-			<!-- Hero Right: Image & Testimonial Card -->
+			<!-- Hero Right: Carousel & Testimonial Card -->
 			<div class="hero-visual">
-				<div class="image-crop-container">
-					<img src="https://placehold.net/600x800.png" alt="Measurable Performance" class="hero-image">
+				<div class="hero-carousel-wrapper fade-up fade-up-delay-2">
+					<!-- Swiper Slider Container -->
+					<div class="image-crop-container swiper hero-swiper">
+						<div class="swiper-wrapper">
+							<!-- Slide 1 -->
+							<div class="swiper-slide">
+								<img src="https://images.pexels.com/photos/7722793/pexels-photo-7722793.jpeg" alt="Laboratory testing answers faster" class="hero-image">
+							</div>
+							<!-- Slide 2 -->
+							<div class="swiper-slide">
+								<img src="https://images.pexels.com/photos/3825379/pexels-photo-3825379.jpeg" alt="Precision diagnostics you can trust" class="hero-image">
+							</div>
+							<!-- Slide 3 -->
+							<div class="swiper-slide">
+								<img src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg" alt="Clinical expertise and oversight" class="hero-image">
+							</div>
+						</div>
+					</div>
+					
+					<!-- Custom Horizontal Progress Indicators -->
+					<div class="carousel-progress-indicators">
+						<div class="progress-track" data-index="0">
+							<div class="progress-bar"></div>
+						</div>
+						<div class="progress-track" data-index="1">
+							<div class="progress-bar"></div>
+						</div>
+						<div class="progress-track" data-index="2">
+							<div class="progress-bar"></div>
+						</div>
+					</div>
 				</div>
 				
 				<!-- Testimonial Overlay Card -->
-				<div class="testimonial-card">
+				<div class="testimonial-card fade-up fade-up-delay-3">
 					<div class="testimonial-rating">
 						<span class="star">&#9733;</span>
 						<span class="star">&#9733;</span>
@@ -49,12 +78,12 @@ get_header();
 						<span class="star">&#9733;</span>
 						<span class="star">&#9733;</span>
 					</div>
-					<p class="testimonial-quote">
+					<p class="testimonial-quote text-base">
 						“Their structured approach cut our operational waste in half.”
 					</p>
 					<div class="testimonial-author">
-						<span class="author-name">— Sarah M.</span>
-						<span class="author-role">Patient</span>
+						<span class="author-name text-sm">— Sarah M.</span>
+						<span class="author-role text-xs">Patient</span>
 					</div>
 				</div>
 			</div>
@@ -62,7 +91,7 @@ get_header();
 	</section>
 
 	<!-- Client Logos Showcase -->
-	<section class="logos-section">
+	<section class="logos-section fade-up">
 		<div class="marquee-wrapper">
 			<div class="marquee-track">
 				<!-- Group 1 -->
@@ -198,6 +227,311 @@ get_header();
 							<span class="dept-subtitle">Department of<br>Fictional Logos</span>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Us Section -->
+	<section class="about-section">
+		<div class="container">
+			<div class="about-header">
+				<span class="about-tagline text-sm fade-up">ABOUT US</span>
+				<h2 class="about-title text-display-sm fade-up fade-up-delay-1">
+					Simply Labs delivers fast, accurate diagnostic testing through advanced laboratory technology and expert clinical oversight, making healthcare more accessible and transparent.
+				</h2>
+			</div>
+			
+			<div class="about-features">
+				<!-- Feature 1 -->
+				<div class="feature-card fade-up fade-up-delay-1">
+					<div class="feature-icon-wrapper icon-border">
+						<span class="feature-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path d="M0 0h24v24H0z" fill="none" />
+								<path fill="currentColor" d="m8 22l1-7H4l9-13h2l-1 8h6L10 22z" />
+							</svg>
+						</span>
+					</div>
+					<div class="feature-text">
+						<span class="feature-label text-xs">Fast Turnaround</span>
+						<h3 class="feature-title text-lg">Results in Hours</h3>
+						<p class="feature-description text-base">Receive reliable laboratory results quickly, helping you make timely healthcare decisions.</p>
+					</div>
+				</div>
+				
+				<!-- Feature 2 -->
+				<div class="feature-card fade-up fade-up-delay-2">
+					<div class="feature-icon-wrapper icon-solid">
+						<span class="feature-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path fill="currentColor" d="M7 2v2h1v14a4 4 0 0 0 4 4a4 4 0 0 0 4-4V4h1V2zm4 14c-.6 0-1-.4-1-1s.4-1 1-1s1 .4 1 1s-.4 1-1 1m2-4c-.6 0-1-.4-1-1s.4-1 1-1s1 .4 1 1s-.4 1-1 1m1-5h-4V4h4z" />
+							</svg>
+						</span>
+					</div>
+					<div class="feature-text">
+						<span class="feature-label text-xs">Advanced Diagnostics</span>
+						<h3 class="feature-title text-lg">Precision You Can Trust</h3>
+						<p class="feature-description text-base">State-of-the-art laboratory technology ensures every test is performed with accuracy and care.</p>
+					</div>
+				</div>
+				
+				<!-- Feature 3 -->
+				<div class="feature-card fade-up fade-up-delay-3">
+					<div class="feature-icon-wrapper icon-border">
+						<span class="feature-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path fill="currentColor" d="M14.84 16.26C17.86 16.83 20 18.29 20 20v2H4v-2c0-1.71 2.14-3.17 5.16-3.74L12 21zM8 8h8v2a4 4 0 0 1-4 4a4 4 0 0 1-4-4zm0-1l.41-4.1a1 1 0 0 1 1-.9h5.19c.51 0 .94.39.99.9L16 7zm4-4h-1v1h-1v1h1v1h1V5h1V4h-1z" />
+							</svg>
+						</span>
+					</div>
+					<div class="feature-text">
+						<span class="feature-label text-xs">Clinical Expertise</span>
+						<h3 class="feature-title text-lg">Reviewed by Professionals</h3>
+						<p class="feature-description text-base">Every report is supported by experienced clinical oversight, giving you confidence in your results.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Choose Us Section -->
+	<section class="choose-section">
+		<div class="container">
+			<div class="choose-header">
+				<span class="choose-tagline text-sm fade-up">WHY CHOOSE US</span>
+				<h2 class="choose-title font-lora text-display-lg fade-up fade-up-delay-1">
+					Helping You Make <br> Informed Health Decisions
+				</h2>
+				<div class="choose-cta fade-up fade-up-delay-2">
+					<a href="#" class="btn-primary text-sm">BOOK A TEST <span class="arrow">&rarr;</span></a>
+				</div>
+			</div>
+			
+			<div class="choose-body">
+				<!-- Video Card (Left Column) -->
+				<div class="choose-video-card fade-up fade-up-delay-1">
+					<span class="video-badge text-xs">TEAM</span>
+					<video src="https://www.pexels.com/download/video/6130565/" autoplay loop muted playsinline class="why-choose-video"></video>
+					<button class="video-control-btn" aria-label="Toggle Video Playback">
+						<!-- Pause icon by default because it autoplays -->
+						<svg class="control-icon icon-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+						</svg>
+						<svg class="control-icon icon-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+							<path d="M8 5v14l11-7z"/>
+						</svg>
+					</button>
+				</div>
+				
+				<!-- 2x2 Feature Grid (Right Column) -->
+				<div class="choose-grid">
+					<!-- Card 1 -->
+					<div class="choose-card fade-up fade-up-delay-1">
+						<div class="choose-icon-wrapper icon-solid-blue">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<circle cx="12" cy="12" r="10"/>
+								<polyline points="12 6 12 12 16 14"/>
+							</svg>
+						</div>
+						<h3 class="choose-card-title text-lg">Rapid Turnaround</h3>
+						<p class="choose-card-description text-base">Receive accurate laboratory results in hours, helping you make timely healthcare decisions without unnecessary waiting.</p>
+					</div>
+					
+					<!-- Card 2 -->
+					<div class="choose-card fade-up fade-up-delay-2">
+						<div class="choose-icon-wrapper icon-solid-purple">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M6 18H18"/>
+								<path d="M10 6l4 4"/>
+								<path d="M7 14.5l5.5-5.5a2.5 2.5 0 0 1 3.5 3.5L10.5 18"/>
+								<path d="M14 22a8 8 0 0 0-4-14"/>
+							</svg>
+						</div>
+						<h3 class="choose-card-title text-lg">Advanced Laboratory Technology</h3>
+						<p class="choose-card-description text-base">Our state-of-the-art diagnostic equipment delivers precise, reliable testing backed by strict quality standards.</p>
+					</div>
+					
+					<!-- Card 3 -->
+					<div class="choose-card fade-up fade-up-delay-3">
+						<div class="choose-icon-wrapper icon-solid-green">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+							</svg>
+						</div>
+						<h3 class="choose-card-title text-lg">Expert Clinical Oversight</h3>
+						<p class="choose-card-description text-base">Every test is reviewed with clinical expertise, providing clear, dependable insights you can trust.</p>
+					</div>
+					
+					<!-- Card 4 -->
+					<div class="choose-card fade-up fade-up-delay-4">
+						<div class="choose-icon-wrapper icon-solid-gray">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<rect x="2" y="4" width="20" height="16" rx="2"/>
+								<line x1="2" y1="10" x2="22" y2="10"/>
+							</svg>
+						</div>
+						<h3 class="choose-card-title text-lg">Transparent & Accessible Care</h3>
+						<p class="choose-card-description text-base">Simple pricing, an easy testing experience, and secure digital reports make managing your health straightforward.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Tests Section -->
+	<section class="tests-section">
+		<div class="container">
+			<div class="tests-header fade-up">
+				<div class="tests-header-left">
+					<span class="tests-tagline text-sm">OUR TESTS</span>
+					<h2 class="tests-title font-lora text-display-lg">
+						Explore Our Most Popular Health Screening Categories
+					</h2>
+				</div>
+				<div class="tests-nav-controls">
+					<button class="tests-prev" aria-label="Previous Slide">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<line x1="19" y1="12" x2="5" y2="12"></line>
+							<polyline points="12 19 5 12 12 5"></polyline>
+						</svg>
+					</button>
+					<button class="tests-next" aria-label="Next Slide">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<line x1="5" y1="12" x2="19" y2="12"></line>
+							<polyline points="12 5 19 12 12 19"></polyline>
+						</svg>
+					</button>
+				</div>
+			</div>
+			
+			<div class="tests-carousel-wrapper fade-up fade-up-delay-1">
+				<div class="swiper tests-swiper">
+					<div class="swiper-wrapper">
+						<!-- Card 01 -->
+						<div class="swiper-slide">
+							<div class="test-card">
+								<div class="test-card-image-wrapper">
+									<img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?w=600&h=450&fit=crop" alt="General Health Testing" class="test-card-image">
+									<span class="test-card-tag text-xs">01 / GENERAL HEALTH</span>
+								</div>
+								<div class="test-card-content">
+									<h3 class="test-card-title text-xl">Comprehensive Health Screening</h3>
+									<p class="test-card-description text-base">Routine blood tests and wellness panels to help you monitor your overall health and detect potential concerns early.</p>
+									<a href="#" class="test-card-btn text-base font-bold">VIEW &rarr;</a>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Card 02 -->
+						<div class="swiper-slide">
+							<div class="test-card">
+								<div class="test-card-image-wrapper">
+									<img src="https://images.pexels.com/photos/3825539/pexels-photo-3825539.jpeg?w=600&h=450&fit=crop" alt="Women's Health Testing" class="test-card-image">
+									<span class="test-card-tag text-xs">02 / WOMEN'S HEALTH</span>
+								</div>
+								<div class="test-card-content">
+									<h3 class="test-card-title text-xl">Women's Health <br> Testing</h3>
+									<p class="test-card-description text-base">Personalized diagnostic tests supporting hormonal balance, reproductive health, and overall wellness.</p>
+									<a href="#" class="test-card-btn text-base font-bold">VIEW &rarr;</a>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Card 03 -->
+						<div class="swiper-slide">
+							<div class="test-card">
+								<div class="test-card-image-wrapper">
+									<img src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?w=600&h=450&fit=crop" alt="Men's Health Testing" class="test-card-image">
+									<span class="test-card-tag text-xs">03 / MEN'S HEALTH</span>
+								</div>
+								<div class="test-card-content">
+									<h3 class="test-card-title text-xl">Men's Health <br> Testing</h3>
+									<p class="test-card-description text-base">Monitor testosterone, heart health, prostate health, and key biomarkers to stay at your best.</p>
+									<a href="#" class="test-card-btn text-base font-bold">VIEW &rarr;</a>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Card 04 -->
+						<div class="swiper-slide">
+							<div class="test-card">
+								<div class="test-card-image-wrapper">
+									<img src="https://images.pexels.com/photos/4793258/pexels-photo-4793258.jpeg?w=600&h=450&fit=crop" alt="Performance & Wellness Testing" class="test-card-image">
+									<span class="test-card-tag text-xs">04 / PERFORMANCE</span>
+								</div>
+								<div class="test-card-content">
+									<h3 class="test-card-title text-xl">Performance And <br> Wellness</h3>
+									<p class="test-card-description text-base">Optimize your health with tests for vitamins, minerals, hormones, recovery, and athletic performance.</p>
+									<a href="#" class="test-card-btn text-base font-bold">VIEW &rarr;</a>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Card 05 -->
+						<div class="swiper-slide">
+							<div class="test-card">
+								<div class="test-card-image-wrapper">
+									<img src="https://images.pexels.com/photos/5726706/pexels-photo-5726706.jpeg?w=600&h=450&fit=crop" alt="Preventive Health Screening" class="test-card-image">
+									<span class="test-card-tag text-xs">05 / PREVENTIVE CARE</span>
+								</div>
+								<div class="test-card-content">
+									<h3 class="test-card-title text-xl">Preventive Health Screening</h3>
+									<p class="test-card-description text-base">Stay ahead of potential health risks with early detection and comprehensive preventive screening packages.</p>
+									<a href="#" class="test-card-btn text-base font-bold">VIEW &rarr;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Patients Choose Us Stats Section -->
+	<section class="patients-choose-section">
+		<div class="container">
+			<div class="stats-header fade-up">
+				<div class="stats-header-left">
+					<span class="stats-tagline text-sm">WHY PATIENTS CHOOSE US</span>
+					<h2 class="stats-title font-lora text-display-lg">
+						Everything You Need for a Better Diagnostic Experience
+					</h2>
+				</div>
+				<div class="stats-cta">
+					<a href="#" class="btn-primary text-sm">BOOK A TEST <span class="arrow">&rarr;</span></a>
+				</div>
+			</div>
+			
+			<div class="stats-banner fade-up fade-up-delay-1">
+				<!-- Card 1 -->
+				<div class="stat-card light-red-bg">
+					<div class="stat-card-top">
+						<span class="stat-number font-lora text-display-sm">24 hrs</span>
+						<span class="stat-badge text-lg">Typical Turnaround</span>
+					</div>
+					<hr class="stat-divider">
+					<p class="stat-description text-base">Fast processing for most routine laboratory tests.</p>
+				</div>
+				
+				<!-- Card 2 -->
+				<div class="stat-card white-bg">
+					<div class="stat-card-top">
+						<span class="stat-number font-lora text-display-sm">100%</span>
+						<span class="stat-badge text-lg">Transparent Pricing</span>
+					</div>
+					<hr class="stat-divider">
+					<p class="stat-description text-base">Know exactly what you're paying before your test.</p>
+				</div>
+				
+				<!-- Card 3 -->
+				<div class="stat-card light-blue-bg">
+					<div class="stat-card-top">
+						<span class="stat-number font-lora text-display-sm">Expert</span>
+						<span class="stat-badge text-lg">Clinical Oversight</span>
+					</div>
+					<hr class="stat-divider">
+					<p class="stat-description text-base">Every report is backed by experienced laboratory professionals.</p>
 				</div>
 			</div>
 		</div>

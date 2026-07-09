@@ -17,14 +17,14 @@
 		</div>
 		<nav class="site-navigation">
 			<ul class="nav-menu">
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">What We Do</a></li>
-				<li><a href="#">Blog</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="text-base">Home</a></li>
+				<li><a href="#" class="text-base">About</a></li>
+				<li><a href="#" class="text-base">What We Do</a></li>
+				<li><a href="#" class="text-base">Blog</a></li>
 			</ul>
 		</nav>
 		<div class="header-cta">
-			<a href="#" class="btn-contact">CONTACT NOW <span class="arrow">&rarr;</span></a>
+			<a href="#" class="btn-contact text-sm">CONTACT NOW <span class="arrow">&rarr;</span></a>
 		</div>
 	</div>
 </header>
